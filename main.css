@@ -1,0 +1,435 @@
+/*
+  Coding from Life – Sketch 2: fluid layout
+
+  For sketch 2 you'll be positioning elements relative to a fluid container. This
+  means you'll need to use percentages when positioning and sizingelements within
+  your frame.
+*/
+
+
+body {
+  background-color: black;
+}
+
+.frame {
+  width: 95vw;
+  height: 57vw;
+  background: white;
+  margin: 2.5vw auto;
+  position: relative;
+}
+
+/* Your CSS goes here */
+
+.table { 
+    position: absolute;
+    bottom: 0;
+    width: 95vw;
+    height: 20vw;
+    background-color: #E9C2A6;
+}
+
+.table2 { 
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-bottom: 7vw solid #E9C2A6;
+    border-left: 95vw solid transparent;
+    top: 30vw;
+}
+
+.bird_head{
+  background-color: #262626;
+  height: 2.8vw;
+  width: 3.5vw;
+  position: absolute;
+  top: 44.2vw;
+  left: 25.3vw;
+  border-radius: 6.9vw 6.9vw 0vw 0vw;
+  z-index: 1;
+}
+
+.bird_body{
+  background-color: #734A12;
+  height: 3.5vw;
+  width: 6.9vw;
+  border-radius: 0vw 0vw 13.9vw 13.9vw;
+  top: 47vw;
+  left: 22vw;
+  position: absolute;
+  z-index: 1;
+}
+
+.bird_feather1{
+  width: 0;
+  height: 0;
+  border-left: 0.69vw solid transparent;
+  border-right: 0.69vw solid transparent;
+  border-bottom: 2.1vw solid #734A12;
+  position: absolute;
+  top: 45.45vw;
+  left: 19.4vw;
+  transform: rotate(120deg);
+  z-index: 1;
+}
+
+.bird_eye{
+  background-color: white;
+  height: 0.69vw;
+  width: 0.69vw;
+  border-radius: 50%;
+  position: absolute;
+  top: 45vw;
+  left: 27.5vw;
+  z-index: 1;
+}
+
+.bird_beak{
+  width: 0;
+  height: 0;
+  border-top: 0.52vw solid transparent;
+  border-bottom: 0.52vw solid transparent;
+  border-left: 2.1vw solid #ffdb4d;
+  position: absolute;
+  top: 45.8vw;
+  left: 28.8vw;
+  z-index: 1;
+}
+
+.bird_outerwing{
+  background-color: #262626;
+  height: 3vw;
+  width: 6vw;
+  border-radius: 0vw 0vw 11.8vw 11.8vw; 
+  position: absolute;
+  top: 47vw;
+  left: 21vw;
+  z-index: 1;
+}
+
+.bird_innerwing{
+  background-color: #666666;
+  height: 2.4vw;
+  width: 4.9vw;
+  border-radius: 0vw 0vw 8.3vw 8.3vw; 
+  position: absolute;
+  top: 47vw;
+  left: 21.5vw;
+  z-index: 1;
+}
+
+.bird_stand{
+  width: 0.69vw;
+  height: 4.5vw;
+  background-color: #262626;
+  position: absolute;
+  top: 50.5vw;
+  left: 25.2vw;
+  z-index: 1;
+}
+
+.bird_disk{
+  background-color: #262626;
+  height: 1vw;
+  width: 3vw;
+  border-radius: 0vw 0vw 12vw 12vw; 
+  position: absolute;
+  top: 55vw;
+  left: 24vw;
+  transform: rotate(180deg);
+  z-index: 1;
+}
+
+.pumpkin_yellow{
+  width: 13.4vw;
+  height: 9.9vw;
+  background-image: linear-gradient(#FFB00F, #EEB422, #8E6B23);
+  border-radius: 11.3vw / 6.5vw;
+  position: absolute;
+  top: 39.5vw;
+  left: 54vw;
+  z-index: 1;
+}
+
+.py_button{
+  border-bottom: 1.8vw solid #5E2612;
+  border-left: 0.35vw solid transparent;
+  border-right: 0.35vw solid transparent;
+  height: 0;
+  width: 1.9vw;
+  position: absolute;
+  top: 43.3vw;
+  left: 67vw;
+  transform: rotate(90deg);
+  z-index: 1;
+}
+
+.pumpkin_orange{
+  width: 14.5vw;
+  height: 12.4vw;
+  background-image: radial-gradient(#FF9955, #FF7722, #FF6103);
+  border-radius: 50%;
+  position: absolute;
+  top: 29.2vw;
+  left: 80vw;
+  z-index: 1;
+}
+
+.pumpkin_orange2{
+  width: 6.9vw;
+  height: 6.2vw;
+  background-image: radial-gradient(#FF9955, #FF7722, #FF6103);
+  border-radius: 50%;
+  position: absolute;
+  top: 25vw;
+  left: 83vw;
+  z-index: 1;
+}
+
+.po_button{
+  border-bottom: 1.7vw solid #5E2612;
+  border-left: 0.35vw solid transparent;
+  border-right: 0.35vw solid transparent;
+  height: 0;
+  width: 1.6vw;
+  position: absolute;
+  top: 23.5vw;
+  left: 85vw;
+  z-index: 1;
+}
+
+.lid_inner{
+  width: 11.2vw;
+  height: 2.8vw;
+  border-radius: 6.9vw / 3.5vw;
+  background: #8B8B83;
+  position: absolute;
+  top: 34vw;
+  left: 28.6vw;
+  z-index: 1;
+}
+
+.lid_outer{
+  width: 13.8vw;
+  height: 3.4vw;
+  border-radius: 6.9vw / 3.5vw;
+  background: black;
+  position: absolute;
+  top: 35vw;
+  left: 27.2vw;
+  z-index: 1;
+}
+
+.jar_disk{
+  width: 11.2vw;
+  height: 2.8vw;
+  border-radius: 6.9vw / 3.5vw;
+  background: black;
+  position: absolute;
+  top: 50vw;
+  left: 28.5vw;
+  z-index: 1;
+}
+
+.lid_top{
+  background-color: black;
+  height: 2vw;
+  width: 4.2vw;
+  border-radius: 0vw 0vw 11.8vw 11.8vw; 
+  position: absolute;
+  top: 33vw;
+  left: 32.2vw;
+  transform: rotate(180deg);
+  z-index: 1;
+}
+
+.jar_body{
+  width: 18vw;
+  height: 16.6vw;
+  background-image: radial-gradient(#8B8B83, #3A3A38, #292421);
+  border-radius: 8vw / 7vw;
+  position: absolute;
+  top: 35vw;
+  left: 25vw;
+  z-index: 1;
+}
+
+.plate_l{
+  width: 8.4vw;
+  height: 2.8vw;
+  border: 0.6vw solid #8E6B23;
+  border-radius: 6.9vw / 3.5vw;
+  position: absolute;
+  top: 40vw;
+  left: 46vw;
+  z-index: 1;
+}
+
+.rod_l{
+  width: 0.7vw;
+  height: 16.6vw;
+  background-color: #8E6B23;
+  position: absolute;
+  top: 27vw;
+  left: 50vw;
+  z-index: 1;
+}
+
+.metal_l{
+  width: 2.8vw;
+  height: 5.6vw;
+  background-color: #8E6B23;
+  position: absolute;
+  top: 21.4vw;
+  left: 49vw;
+  z-index: 1;
+}
+
+.wax_l{
+  width: 2vw;
+  height: 8.4vw;
+  background-color: #FFE4B5;
+  position: absolute;
+  top: 13vw;
+  left: 49.4vw;
+  z-index: 1;
+}
+
+.stick_l{
+  width: 1.04vw;
+  height: 1.26vw;
+  background-color: black;
+  position: absolute;
+  top: 11.7vw;
+  left: 49.9vw;
+  z-index: 1;
+}
+
+.plate_r{
+  width: 4.2vw;
+  height: 1.4vw;
+  border: 0.4vw solid #8E6B23;
+  border-radius: 6.9vw / 3.5vw;
+  position: absolute;
+  top: 32vw;
+  left: 77vw;
+  z-index: 1;
+}
+
+.rod_r{
+  width: 0.4vw;
+  height: 9.3vw;
+  background-color: #8E6B23;
+  position: absolute;
+  top: 24.6vw;
+  left: 80vw;
+  z-index: 1;
+}
+
+.metal_r{
+  width: 1.4vw;
+  height: 2.8vw;
+  background-color: #8E6B23;
+  position: absolute;
+  top: 21.8vw;
+  left: 79.5vw;
+  z-index: 1;
+}
+
+.wax_r{
+  width: 1vw;
+  height: 4.2vw;
+  background-color: #FFE4B5;
+  position: absolute;
+  top: 17.6vw;
+  left: 79.7vw;
+  z-index: 1;
+}
+
+.stick_r{
+  width: 0.52vw;
+  height: 0.63vw;
+  background-color: black;
+  position: absolute;
+  top: 17vw;
+  left: 79.9vw;
+  z-index: 1;
+}
+
+.yellow_potato{
+  width: 10.7vw;
+  height: 7.3vw;
+  background-image: linear-gradient(#CFD784, #A2BC13, #859C27);
+  border-radius: 8.3vw / 4.9vw;
+  position: absolute;
+  top: 29vw;
+  left: 53vw;
+  z-index: 1;
+}
+
+.glass_stand{
+  border-bottom: 4.2vw solid  #104E8B;
+  border-left: 2.8vw solid transparent;
+  border-right: 2.8vw solid transparent;
+  border-radius: 3.4vw;
+  height: 0;
+  width: 5.6vw;
+  position: absolute;
+  top: 34vw;
+  left: 60vw;
+  z-index: 1;
+}
+
+.glass_body{
+  height: 18vw;
+  width: 12.6vw;
+  background: url(https://images.delphiglass.com/image_1500/229982.jpg) no-repeat center center;
+  position: absolute;
+  border-bottom-left-radius: 3.4vw;
+  border-bottom-right-radius: 3.4vw;
+  top: 16.1vw;
+  left: 59.2vw;
+  z-index: 1;
+}
+
+.leaf1{ 
+  width: 7vw; 
+  height: 4.2vw;
+  background-color: #A0DE21; 
+  -moz-border-radius: 6.9vw 0vw;
+  -webkit-border-radius: 6.9vw 0vw;
+  border-radius: 6.9vw 0vw;
+  position: absolute;
+  top: 12vw;
+  left: 69vw;
+  z-index: 1;
+}
+
+.leaf2{ 
+  width: 7vw; 
+  height: 4.2vw;
+  background-color: #A0DE21; 
+  -moz-border-radius: 6.9vw 0vw;
+  -webkit-border-radius: 6.9vw 0vw;
+  border-radius: 6.9vw 0vw;
+  transform: rotate(60deg);
+  position: absolute;
+  top: 12vw;
+  left: 58vw;
+  z-index: 1;
+}
+
+.leaf3{ 
+  width: 8.4vw; 
+  height: 5.6vw;
+  background-color: #385E0F; 
+  -moz-border-radius: 6.9vw 0vw;
+  -webkit-border-radius: 6.9vw 0vw;
+  border-radius: 6.9vw 0vw;
+  transform: rotate(70deg);
+  position: absolute;
+  top: 10.4vw;
+  left: 61vw;
+  z-index: 1;
+}
+
